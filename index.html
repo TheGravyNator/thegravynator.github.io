@@ -1,1 +1,92 @@
-ohayo sekai
+<p id="mechFirst"><br>
+<p id="mechSecond"><br>
+<p id="mechThird"><br>
+
+<script>
+    const mechanics = [
+    "vechten",
+    "2 player aan elkaar vast",
+    "springen",
+    "management",
+    "vliegen",
+    "crafting",
+    "schieten",
+    "stealth",
+    "duwen",
+    "customization",
+    "grappling hooks",
+    "gliding",
+    "racing",
+    "vehicles",
+    "balans",
+    "simulation",
+    "sports",
+    "checkpoints",
+    "swimming",
+    "puzzle",
+    "blazen",
+    "opblazen",
+    "timing",
+    "time travel",
+    "gravity",
+    "speurtocht",
+    "level manipulation",
+    "exploration",
+    "quests",
+    "communicatie",
+    "gooien",
+    "co-op",
+    "tekenen",
+    "tamagotchi",
+    "pathfinding",
+    "destruction",
+    "construction",
+    "graven",
+    "swinging",
+    "turn based",
+    "diving",
+    "finding clues",
+    "combos",
+    "upgrading",
+    "magic",
+    "distributie",
+    "dungeons",
+    "minion control",
+    "tower defense",
+    "speedrun",
+    "dash",
+    "double jump",
+    "jetpack",
+    "ragdoll",
+    "invisibility",
+    "cleaning",
+    "teaching",
+    "rhythm",
+    "free roam"
+    ];
+
+    var chosenMech = generateMechanics();
+
+    while (hasDuplicates(chosenMech))
+    {
+        chosenMech = generateMechanics();
+    }
+
+    document.getElementById("mechFirst").innerHTML = chosenMech[0];
+    document.getElementById("mechSecond").innerHTML = chosenMech[1];
+    document.getElementById("mechThird").innerHTML = chosenMech[2];
+    
+    function generateMechanics()
+    {
+        var mechFirst = mechanics[Math.floor(Math.random() * mechanics.length)];
+        var mechSecond = mechanics[Math.floor(Math.random() * mechanics.length)];
+        var mechThird = mechanics[Math.floor(Math.random() * mechanics.length)];
+
+        return [mechFirst, mechSecond, mechThird];
+    }
+
+    function hasDuplicates(array)
+    {
+        return (new Set(array)).size !== array.length;
+    }
+</script>
