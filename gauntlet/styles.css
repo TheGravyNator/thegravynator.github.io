@@ -16,8 +16,17 @@
     font-size: 25px;
     color: #818181;
     display: block;
-  }
+}
   
   .sidebar a:hover {
     color: #f1f1f1;
+  }
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
   }
