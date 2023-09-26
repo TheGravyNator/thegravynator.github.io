@@ -1,6 +1,6 @@
 .sidebar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
+    width: 200px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -8,22 +8,24 @@
     background-color: black; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+    border-style: none solid none none;
+    border-color: white;
 }
 
 .sidebar a {
-    padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: green;
+    color: white;
     display: block;
+    text-align: center;
 }
   
   .sidebar a:hover {
-    color: white;
+    color: lightgrey;
   }
 
 .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-left: 200px; /* Same as the width of the sidebar */
     padding: 0px 10px;
 }
   @media screen and (max-height: 450px) {
@@ -35,9 +37,34 @@
     background-color: black;
 }
 
+h1 {
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 p {
     color: white;
-    font-size: xx-large;
-    padding: 20px;
+}
+
+#player {
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+}
+
+table, th, td {
+    color: white;
     text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+.team {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
 }
