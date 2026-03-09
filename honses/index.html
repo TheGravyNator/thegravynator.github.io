@@ -3,7 +3,8 @@
     <link rel="stylesheet" href="..\styles.css">
 </head>
 
-
+<div id="SeiunSkyDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1020_102002.png" width="128" height="128"> Seiun Sky (Ballroom) will release in </div>
+<br>
 <div id="NeoUniverseDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1105_110501.png" width="128" height="128"> Neo Universe will release in </div>
 <br>
 <div id="HishiMiracleDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1106_110601.png" width="128" height="128"> Hishi Miracle will release in </div>
@@ -15,12 +16,14 @@
 <script>
     const oneDay = 1000 * 60 * 60 * 24; 
 
+    const seiunSkyDate = new Date("2026-04-02");
     const neoUniverseDate = new Date("2026-11-20");
     const hishiMiracleDate = new Date("2026-12-3");
     const marvelousSundayDate = new Date("2026-12-27");
     const transcendDate = new Date("2027-6-8");
 
-    document.getElementById("NeoUniverseDays").innerHTML += CalculateDaysLeft(neoUniverseDate) + " days, on " + neoUniverseDate.toLocaleDateString() + ".";
+   document.getElementById("SeiunSkyDays").innerHTML += CalculateDaysLeft(seiunSkyDate) + " days, on " + seiunSkyDate.toLocaleDateString() + ".";
+ document.getElementById("NeoUniverseDays").innerHTML += CalculateDaysLeft(neoUniverseDate) + " days, on " + neoUniverseDate.toLocaleDateString() + ".";
     document.getElementById("HishiMiracleDays").innerHTML += CalculateDaysLeft(hishiMiracleDate) + " days, on " + hishiMiracleDate.toLocaleDateString() + ".";
     document.getElementById("MarvelousSundayDays").innerHTML += CalculateDaysLeft(marvelousSundayDate) + " days, on " + marvelousSundayDate.toLocaleDateString() + ".";
     document.getElementById("TranscendDays").innerHTML += CalculateDaysLeft(transcendDate) + " days, on " + transcendDate.toLocaleDateString() + ".";
