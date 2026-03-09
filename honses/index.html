@@ -1,46 +1,55 @@
 <html>
 <head>
-    <link rel="stylesheet" href="..\styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<div id="SeiunSkyDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1020_102002.png" width="112" height="112"> Seiun Sky (Ballroom) will release in </div>
-<br>
-<div id="NeoUniverseDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1105_110501.png" width="112" height="112"> Neo Universe will release in </div>
-<br>
-<div id="HishiMiracleDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1106_110601.png" width="112" height="112"> Hishi Miracle will release in </div>
-<br>
-<div id="MarvelousSundayDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1055_105501.png" width="112" height="112"> Marvelous Sunday will release in </div>
-<br>
-<div id="TranscendDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1080_108001.png" width="112" height="112"> Transcend will release in </div>
-<br>
-<div id="RiceShowerDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1030_103003.png" width="112" height="112"> Rice Shower (Great Food Festival) will release in </div>
 
-<!--
-<details open>
-    <summary>Release Timeline</summary>
 
+<details>
+    <summary>Uma Release Timeline</summary>
+    <hr>
+    <div id="SeiunSkyDays"><a href="https://gametora.com/umamusume/characters/102002-seiun-sky" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1020_102002.png">
+    </a> Seiun Sky (Ballroom) will release in </div>
+    <br>
+    <div id="NeoUniverseDays"><a href="https://gametora.com/umamusume/characters/110501-neo-universe" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1105_110501.png"></a> Neo Universe will release in </div>
+    <br>
+    <div id="HishiMiracleDays"><a href="https://gametora.com/umamusume/characters/110601-hishi-miracle" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1106_110601.png"></a> Hishi Miracle will release in </div>
+    <br>
+    <div id="MarvelousSundayDays"><a href="https://gametora.com/umamusume/characters/105501-marvelous-sunday" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1055_105501.png"></a> Marvelous Sunday will release in </div>
+    <br>
+    <div id="TranscendDays"><a href="https://gametora.com/umamusume/characters/108001-transcend" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1080_108001.png"></a> Transcend will release in </div>
+    <br>
+    <div id="RiceShowerDays"><a href="https://gametora.com/umamusume/characters/103003-rice-shower" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1030_103003.png"></a> Rice Shower (Great Food Festival) will release in </div>
+    <br>
+    <div id="NeoUniverse2Days"><a href="https://gametora.com/umamusume/characters/110502-neo-universe" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1105_110502.png"></a> Neo Universe (Autumn) will release in </div>
 </details>
 <hr>
 <details>
-    <summary>Carat calculator</summary>
-    <form>
-        <input type="checkbox" id="monthlycaratpack" name="monthlycaratpack">
-        <label for="monthlycaratpack">Monthly Carat Pack [500 p/m + 30 p/d]</label><br>
-        <input type="checkbox" id="timetrials" name="timetrials">
-        <label for="timetrials">Time Trials reward (Promote>Demote) [225 p/w > 150 p/w]</label><br>
-        <label for="uma">For which uma?</label>
-        <select name="uma" id="uma">
-            <option value="seiunSky">Seiun Sky (Ballroom)</option>
-            <option value="neoUniverse">Neo Universe</option>
-            <option value="hishiMiracle">Hishi Miracle</option>
-            <option value="marvelousSunday">Marvelous Sunday</option>
-            <option value="transcend">Transcend</option>
-            <option value="riceShower">Rice Shower (Great Food Festival)</option>
-        </select>
-        <input type="submit" value="Submit">
-    </form>
+    <summary>Song Release Timeline</summary>
+    <hr>
+    <div id="GirlsLegendsUDays"><a onclick="play('girlslegendu')">
+        <img src="https://umamusu.wiki/w/images/e/ef/GIRLSLEGENDU.png">
+    </a> Girl's Legends U will release in </div>
+    <br>
+    <div id="MsVictoriaDays"><a onclick="play('msvictoria')">
+        <img src="https://umamusu.wiki/w/images/7/75/MsVICTORIA.png"> Ms. Victoria will release in </div>
+    </a>
+    <br>
+    <div id="TracenOndoDays"><a onclick="play('tracenondo')">
+        <img src="https://umamusu.wiki/w/images/8/83/TracenOndo.png">
+    </a> Tracen Ondo will release in </div>
+    <br>
+    <div id="GourmetParadeDays"><a onclick="play('gourmetparade')">
+        <img src="https://umamusu.wiki/w/images/1/13/UmaSugiGourmetParade.png">
+    </a> Gourmet Parade will release in </div>
+    <br>
+    <div id="MeniShukiRushDays"><a onclick="play('menishukirush')">
+        <img src="https://umamusu.wiki/w/images/2/24/MeniShukiRushsshu.jpg">
+    </a> Meni Shuki Rush will release in </div>
 </details>
--->
+<hr>
+
+
 <script>
     const oneDay = 1000 * 60 * 60 * 24; 
 
@@ -50,17 +59,107 @@
     const marvelousSundayDate = new Date("2026-12-27");
     const transcendDate = new Date("2027-6-8");
     const riceShowerDate = new Date("2027-8-19");
+    const neoUniverse2Date = new Date("2027-9-19");
 
-    document.getElementById("SeiunSkyDays").innerHTML += CalculateDaysLeft(seiunSkyDate) + " days, on " + seiunSkyDate.toLocaleDateString("nl-NL") + ".";
-    document.getElementById("NeoUniverseDays").innerHTML += CalculateDaysLeft(neoUniverseDate) + " days, on " + neoUniverseDate.toLocaleDateString("nl-NL") + ".";
-    document.getElementById("HishiMiracleDays").innerHTML += CalculateDaysLeft(hishiMiracleDate) + " days, on " + hishiMiracleDate.toLocaleDateString("nl-NL") + ".";
-    document.getElementById("MarvelousSundayDays").innerHTML += CalculateDaysLeft(marvelousSundayDate) + " days, on " + marvelousSundayDate.toLocaleDateString("nl-NL") + ".";
-    document.getElementById("TranscendDays").innerHTML += CalculateDaysLeft(transcendDate) + " days, on " + transcendDate.toLocaleDateString("nl-NL") + ".";
-    document.getElementById("RiceShowerDays").innerHTML += CalculateDaysLeft(riceShowerDate) + " days, on " + riceShowerDate.toLocaleDateString("nl-NL") + ".";
+    const girlsLegendsUDate = new Date("2026-7-1");
+    const msVictoriaDate = new Date("2026-7-31");
+    const tracenOndoDate = new Date("2027-2-5");
+    const gourmetParadeDate = new Date("2027-8-11");
+    const meniShukiRushDate = new Date("2028-4-23");
+
+    const girlslegendu = new Audio("audio/girlslegendu.mp3");
+    const msvictoria = new Audio("audio/msvictoria.mp3");
+    const tracenondo = new Audio("audio/tracenondo.mp3");
+    const gourmetparade = new Audio("audio/gourmetparade.mp3");
+    const menishukirush = new Audio("audio/menishukirush.mp3");
+
+    const locale = "en-NL";
+
+    const options = {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    };
+
+
+    document.getElementById("SeiunSkyDays").innerHTML += CalculateDaysLeft(seiunSkyDate) + " days, on " + seiunSkyDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("NeoUniverseDays").innerHTML += CalculateDaysLeft(neoUniverseDate) + " days, on " + neoUniverseDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("HishiMiracleDays").innerHTML += CalculateDaysLeft(hishiMiracleDate) + " days, on " + hishiMiracleDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("MarvelousSundayDays").innerHTML += CalculateDaysLeft(marvelousSundayDate) + " days, on " + marvelousSundayDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("TranscendDays").innerHTML += CalculateDaysLeft(transcendDate) + " days, on " + transcendDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("RiceShowerDays").innerHTML += CalculateDaysLeft(riceShowerDate) + " days, on " + riceShowerDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("NeoUniverse2Days").innerHTML += CalculateDaysLeft(neoUniverse2Date) + " days, on " + neoUniverse2Date.toLocaleDateString(locale, options) + ".";
+
+    document.getElementById("GirlsLegendsUDays").innerHTML += CalculateDaysLeft(girlsLegendsUDate) + " days, on " + girlsLegendsUDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("MsVictoriaDays").innerHTML += CalculateDaysLeft(msVictoriaDate) + " days, on " + msVictoriaDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("TracenOndoDays").innerHTML += CalculateDaysLeft(tracenOndoDate) + " days, on " + tracenOndoDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("GourmetParadeDays").innerHTML += CalculateDaysLeft(gourmetParadeDate) + " days, on " + gourmetParadeDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("MeniShukiRushDays").innerHTML += CalculateDaysLeft(meniShukiRushDate) + " days, on " + meniShukiRushDate.toLocaleDateString(locale, options) + ".";
+
+
 
     function CalculateDaysLeft(date)
     {
         return Math.round((date - Date.now()) / oneDay);
+    }
+
+    function play(song)
+    {
+        if (song == "girlslegendu")
+        {
+            if(girlslegendu.paused)
+            {   
+                girlslegendu.play();
+            }
+            else 
+            {
+                girlslegendu.pause();
+            }
+        }
+        if (song == "msvictoria")
+        {
+            if(msvictoria.paused)
+            {   
+                msvictoria.play();
+            }
+            else 
+            {
+                msvictoria.pause();
+            }
+        }
+        if (song == "tracenondo")
+        {
+            if(tracenondo.paused)
+            {   
+                tracenondo.play();
+            }
+            else 
+            {
+                tracenondo.pause();
+            }
+        }
+        if (song == "gourmetparade")
+        {
+            if(gourmetparade.paused)
+            {   
+                gourmetparade.play();
+            }
+            else 
+            {
+                gourmetparade.pause();
+            }
+        }
+        if (song == "menishukirush")
+        {
+            if(menishukirush.paused)
+            {   
+                menishukirush.play();
+            }
+            else 
+            {
+                menishukirush.pause();
+            }
+        }
     }
 </script>
 
