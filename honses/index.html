@@ -3,15 +3,37 @@
     <link rel="stylesheet" href="..\styles.css">
 </head>
 
-<div id="SeiunSkyDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1020_102002.png" width="128" height="128"> Seiun Sky (Ballroom) will release in </div>
-<br>
-<div id="NeoUniverseDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1105_110501.png" width="128" height="128"> Neo Universe will release in </div>
-<br>
-<div id="HishiMiracleDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1106_110601.png" width="128" height="128"> Hishi Miracle will release in </div>
-<br>
-<div id="MarvelousSundayDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1055_105501.png" width="128" height="128"> Marvelous Sunday will release in </div>
-<br>
-<div id="TranscendDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1080_108001.png" width="128" height="128"> Transcend will release in </div>
+<details open>
+    <summary>Release Timeline</summary>
+    <div id="SeiunSkyDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1020_102002.png" width="112" height="112"> Seiun Sky (Ballroom) will release in </div>
+    <br>
+    <div id="NeoUniverseDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1105_110501.png" width="112" height="112"> Neo Universe will release in </div>
+    <br>
+    <div id="HishiMiracleDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1106_110601.png" width="112" height="112"> Hishi Miracle will release in </div>
+    <br>
+    <div id="MarvelousSundayDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1055_105501.png" width="112" height="112"> Marvelous Sunday will release in </div>
+    <br>
+    <div id="TranscendDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1080_108001.png" width="112" height="112"> Transcend will release in </div>
+</details>
+
+<details>
+    <summary>Carat calculator</summary>
+    <form>
+        <input type="checkbox" id="monthlycaratpack" name="monthlycaratpack">
+        <label for="monthlycaratpack">Monthly Carat Pack [500 p/m + 30 p/d]</label><br>
+        <input type="checkbox" id="timetrials" name="timetrials">
+        <label for="timetrials">Time Trials reward (Promote>Demote) [225 p/w > 150 p/w]</label><br>
+        <label for="uma">For which uma?</label>
+        <select name="uma" id="uma">
+            <option value="seiunSky">Seiun Sky (Ballroom)</option>
+            <option value="neoUniverse">Neo Universe</option>
+            <option value="hishiMiracle">Hishi Miracle</option>
+            <option value="marvelousSunday">Marvelous Sunday</option>
+            <option value="transcend">Transcend</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</details>
 
 <script>
     const oneDay = 1000 * 60 * 60 * 24; 
