@@ -14,6 +14,8 @@
     <div id="MarvelousSundayDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1055_105501.png" width="112" height="112"> Marvelous Sunday will release in </div>
     <br>
     <div id="TranscendDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1080_108001.png" width="112" height="112"> Transcend will release in </div>
+    <br>
+    <div id="RiceShowerDays"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1030_103003.png" width="112" height="112"> Rice Shower (Great Food Festival) </div>
 </details>
 
 <details>
@@ -30,6 +32,7 @@
             <option value="hishiMiracle">Hishi Miracle</option>
             <option value="marvelousSunday">Marvelous Sunday</option>
             <option value="transcend">Transcend</option>
+            <option value="riceShower">Rice Shower (Great Food Festival)</option>
         </select>
         <input type="submit" value="Submit">
     </form>
@@ -38,17 +41,19 @@
 <script>
     const oneDay = 1000 * 60 * 60 * 24; 
 
-    const seiunSkyDate = new Date("2026-04-02");
+    const seiunSkyDate = new Date("2026-4-2");
     const neoUniverseDate = new Date("2026-11-20");
     const hishiMiracleDate = new Date("2026-12-3");
     const marvelousSundayDate = new Date("2026-12-27");
     const transcendDate = new Date("2027-6-8");
+    const riceShowerDate = new Date("2027-8-19");
 
-   document.getElementById("SeiunSkyDays").innerHTML += CalculateDaysLeft(seiunSkyDate) + " days, on " + seiunSkyDate.toLocaleDateString() + ".";
- document.getElementById("NeoUniverseDays").innerHTML += CalculateDaysLeft(neoUniverseDate) + " days, on " + neoUniverseDate.toLocaleDateString() + ".";
-    document.getElementById("HishiMiracleDays").innerHTML += CalculateDaysLeft(hishiMiracleDate) + " days, on " + hishiMiracleDate.toLocaleDateString() + ".";
-    document.getElementById("MarvelousSundayDays").innerHTML += CalculateDaysLeft(marvelousSundayDate) + " days, on " + marvelousSundayDate.toLocaleDateString() + ".";
-    document.getElementById("TranscendDays").innerHTML += CalculateDaysLeft(transcendDate) + " days, on " + transcendDate.toLocaleDateString() + ".";
+    document.getElementById("SeiunSkyDays").innerHTML += CalculateDaysLeft(seiunSkyDate) + " days, on " + seiunSkyDate.toLocaleDateString("nl-NL") + ".";
+    document.getElementById("NeoUniverseDays").innerHTML += CalculateDaysLeft(neoUniverseDate) + " days, on " + neoUniverseDate.toLocaleDateString("nl-NL") + ".";
+    document.getElementById("HishiMiracleDays").innerHTML += CalculateDaysLeft(hishiMiracleDate) + " days, on " + hishiMiracleDate.toLocaleDateString("nl-NL") + ".";
+    document.getElementById("MarvelousSundayDays").innerHTML += CalculateDaysLeft(marvelousSundayDate) + " days, on " + marvelousSundayDate.toLocaleDateString("nl-NL") + ".";
+    document.getElementById("TranscendDays").innerHTML += CalculateDaysLeft(transcendDate) + " days, on " + transcendDate.toLocaleDateString("nl-NL") + ".";
+    document.getElementById("RiceShowerDays").innerHTML += CalculateDaysLeft(riceShowerDate) + " days, on " + riceShowerDate.toLocaleDateString("nl-NL") + ".";
 
     function CalculateDaysLeft(date)
     {
