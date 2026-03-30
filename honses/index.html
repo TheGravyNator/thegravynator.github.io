@@ -48,6 +48,10 @@
     <div id="MeniShukiRushDays"><a onclick="play('menishukirush')">
         <img src="https://umamusu.wiki/w/images/2/24/MeniShukiRushsshu.jpg">
     </a> Meni Shuki Rush will release in </div>
+    <br>
+    <div id="UmaInAmericaDays">
+        <img src="https://umamusu.wiki/w/images/2/24/MeniShukiRushsshu.jpg">
+    </a> Uma On Americ will release in </div>
 </details>
 <hr>
 
@@ -68,6 +72,7 @@
     const tracenOndoDate = new Date("2027-2-5");
     const gourmetParadeDate = new Date("2027-8-11");
     const meniShukiRushDate = new Date("2028-4-23");
+    const umaInAmericaDate = new Date("2028-8-12");
 
     const girlslegendu = new Audio("audio/girlslegendu.mp3");
     const msvictoria = new Audio("audio/msvictoria.mp3");
@@ -97,6 +102,8 @@
     document.getElementById("TracenOndoDays").innerHTML += CalculateDaysLeft(tracenOndoDate) + " days, on " + tracenOndoDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("GourmetParadeDays").innerHTML += CalculateDaysLeft(gourmetParadeDate) + " days, on " + gourmetParadeDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("MeniShukiRushDays").innerHTML += CalculateDaysLeft(meniShukiRushDate) + " days, on " + meniShukiRushDate.toLocaleDateString(locale, options) + ".";
+
+document.getElementById("UmaInAmericaDays").innerHTML += CalculateDaysLeft(umaInAmericaDate) + " days, on " + umaInAmericaDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("RedDesireDays").innerHTML += "???" + " days, on " + "???.";
 
 
