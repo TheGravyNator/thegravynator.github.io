@@ -8,9 +8,6 @@
 <details>
     <summary>Uma Release Timeline</summary>
     <hr>
-    <div id="SeiunSkyDays"><a href="https://gametora.com/umamusume/characters/102002-seiun-sky" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1020_102002.png">
-    </a> Seiun Sky (Ballroom) will release in </div>
-    <br>
     <div id="NeoUniverseDays"><a href="https://gametora.com/umamusume/characters/110501-neo-universe" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1105_110501.png"></a> Neo Universe will release in </div>
     <br>
     <div id="HishiMiracleDays"><a href="https://gametora.com/umamusume/characters/110601-hishi-miracle" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1106_110601.png"></a> Hishi Miracle will release in </div>
@@ -18,6 +15,8 @@
     <div id="MarvelousSundayDays"><a href="https://gametora.com/umamusume/characters/105501-marvelous-sunday" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1055_105501.png"></a> Marvelous Sunday will release in </div>
     <br>
     <div id="TranscendDays"><a href="https://gametora.com/umamusume/characters/108001-transcend" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1080_108001.png"></a> Transcend will release in </div>
+    <br>
+    <div id="SuperCreekDays"><a href="https://gametora.com/umamusume/characters/104503-super-creek" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1045_104503.png"></a> Super Creek (Warfare) will release in </div>
     <br>
     <div id="RiceShowerDays"><a href="https://gametora.com/umamusume/characters/103003-rice-shower" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1030_103003.png"></a> Rice Shower (Great Food Festival) will release in </div>
     <br>
@@ -59,13 +58,13 @@
 <script>
     const oneDay = 1000 * 60 * 60 * 24; 
 
-    const seiunSkyDate = new Date("2026-4-2");
-    const neoUniverseDate = new Date("2026-11-20");
-    const hishiMiracleDate = new Date("2026-12-3");
-    const marvelousSundayDate = new Date("2026-12-27");
-    const transcendDate = new Date("2027-6-8");
-    const riceShowerDate = new Date("2027-8-19");
-    const neoUniverse2Date = new Date("2027-9-19");
+    const neoUniverseDate = new Date("2026-12-12");
+    const hishiMiracleDate = new Date("2026-12-26");
+    const marvelousSundayDate = new Date("2027-1-21");
+    const transcendDate = new Date("2027-7-17");
+    const superCreekDate = new Date("2027-8-18");
+    const riceShowerDate = new Date("2027-10-3");
+    const neoUniverse2Date = new Date("2027-11-5");
 
     const girlsLegendsUDate = new Date("2026-7-1");
     const msVictoriaDate = new Date("2026-7-31");
@@ -89,24 +88,21 @@
     };
 
 
-    document.getElementById("SeiunSkyDays").innerHTML += CalculateDaysLeft(seiunSkyDate) + " days, on " + seiunSkyDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("NeoUniverseDays").innerHTML += CalculateDaysLeft(neoUniverseDate) + " days, on " + neoUniverseDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("HishiMiracleDays").innerHTML += CalculateDaysLeft(hishiMiracleDate) + " days, on " + hishiMiracleDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("MarvelousSundayDays").innerHTML += CalculateDaysLeft(marvelousSundayDate) + " days, on " + marvelousSundayDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("TranscendDays").innerHTML += CalculateDaysLeft(transcendDate) + " days, on " + transcendDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("RiceShowerDays").innerHTML += CalculateDaysLeft(riceShowerDate) + " days, on " + riceShowerDate.toLocaleDateString(locale, options) + ".";
+    document.getElementById("SuperCreekDays").innerHTML += CalculateDaysLeft(superCreekDate) + " days, on " + superCreekDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("NeoUniverse2Days").innerHTML += CalculateDaysLeft(neoUniverse2Date) + " days, on " + neoUniverse2Date.toLocaleDateString(locale, options) + ".";
+    document.getElementById("RedDesireDays").innerHTML += "???" + " days, on " + "???.";
 
     document.getElementById("GirlsLegendsUDays").innerHTML += CalculateDaysLeft(girlsLegendsUDate) + " days, on " + girlsLegendsUDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("MsVictoriaDays").innerHTML += CalculateDaysLeft(msVictoriaDate) + " days, on " + msVictoriaDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("TracenOndoDays").innerHTML += CalculateDaysLeft(tracenOndoDate) + " days, on " + tracenOndoDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("GourmetParadeDays").innerHTML += CalculateDaysLeft(gourmetParadeDate) + " days, on " + gourmetParadeDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("MeniShukiRushDays").innerHTML += CalculateDaysLeft(meniShukiRushDate) + " days, on " + meniShukiRushDate.toLocaleDateString(locale, options) + ".";
-
-document.getElementById("UmaInAmericaDays").innerHTML += CalculateDaysLeft(umaInAmericaDate) + " days, on " + umaInAmericaDate.toLocaleDateString(locale, options) + ".";
-    document.getElementById("RedDesireDays").innerHTML += "???" + " days, on " + "???.";
-
-
+    document.getElementById("UmaInAmericaDays").innerHTML += CalculateDaysLeft(umaInAmericaDate) + " days, on " + umaInAmericaDate.toLocaleDateString(locale, options) + ".";
 
     function CalculateDaysLeft(date)
     {
