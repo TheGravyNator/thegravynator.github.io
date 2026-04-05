@@ -49,7 +49,7 @@
         <img src="https://umamusu.wiki/w/images/2/24/MeniShukiRushsshu.jpg">
     </a> Meni Shuki Rush will release in </div>
     <br>
-    <div id="UmaInAmericaDays">
+    <div id="UmaInAmericaDays"><a onclick="play('umainamerica')">
         <img src="https://umamusu.wiki/w/images/7/7d/UMA_IN_AMERICA.jpg">
     </a> Uma In America will release in </div>
 </details>
@@ -79,6 +79,7 @@
     const tracenondo = new Audio("audio/tracenondo.mp3");
     const gourmetparade = new Audio("audio/gourmetparade.mp3");
     const menishukirush = new Audio("audio/menishukirush.mp3");
+    const umainamerica = new Audio("audio/umainamerica.mp3");
 
     const locale = "en-NL";
 
@@ -168,6 +169,17 @@ document.getElementById("UmaInAmericaDays").innerHTML += CalculateDaysLeft(umaIn
             else 
             {
                 menishukirush.pause();
+            }
+        }
+        if (song == "umainamerica")
+        {
+            if(umainamerica.paused)
+            {   
+                umainamerica.play();
+            }
+            else 
+            {
+                umainamerica.pause();
             }
         }
     }
