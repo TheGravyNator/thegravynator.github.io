@@ -14,6 +14,8 @@
     <br>
     <div id="MarvelousSundayDays"><a href="https://gametora.com/umamusume/characters/105501-marvelous-sunday" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1055_105501.png"></a> Marvelous Sunday will release in </div>
     <br>
+<div id="SymboliKrisDays"><a href="https://gametora.com/umamusume/characters/108302-symboli-kris-s" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1083_108302.png"></a> Symboli Kris S (Halloween) will release in </div>
+    <br>
     <div id="TranscendDays"><a href="https://gametora.com/umamusume/characters/108001-transcend" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1080_108001.png"></a> Transcend will release in </div>
     <br>
     <div id="SuperCreekDays"><a href="https://gametora.com/umamusume/characters/104503-super-creek" target="_blank"><img src="https://gametora.com/images/umamusume/characters/chara_stand_1045_104503.png"></a> Super Creek (Warfare) will release in </div>
@@ -61,6 +63,7 @@
     const neoUniverseDate = new Date("2026-12-12");
     const hishiMiracleDate = new Date("2026-12-26");
     const marvelousSundayDate = new Date("2027-1-21");
+    const symboliKrisDate = new Date("2027-3-30");
     const transcendDate = new Date("2027-7-17");
     const superCreekDate = new Date("2027-8-18");
     const riceShowerDate = new Date("2027-10-3");
@@ -92,6 +95,8 @@
     document.getElementById("NeoUniverseDays").innerHTML += CalculateDaysLeft(neoUniverseDate) + " days, on " + neoUniverseDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("HishiMiracleDays").innerHTML += CalculateDaysLeft(hishiMiracleDate) + " days, on " + hishiMiracleDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("MarvelousSundayDays").innerHTML += CalculateDaysLeft(marvelousSundayDate) + " days, on " + marvelousSundayDate.toLocaleDateString(locale, options) + ".";
+
+document.getElementById("SymboliKrisDays").innerHTML += CalculateDaysLeft(symboliKrisDays) + " days, on " + symboliKrisDate.toLocaleString(locale, options) + ".";
     document.getElementById("TranscendDays").innerHTML += CalculateDaysLeft(transcendDate) + " days, on " + transcendDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("RiceShowerDays").innerHTML += CalculateDaysLeft(riceShowerDate) + " days, on " + riceShowerDate.toLocaleDateString(locale, options) + ".";
     document.getElementById("SuperCreekDays").innerHTML += CalculateDaysLeft(superCreekDate) + " days, on " + superCreekDate.toLocaleDateString(locale, options) + ".";
